@@ -40,7 +40,7 @@ resource "aws_s3_bucket_notification" "vdlg_video_bucket_notification" {
   topic {
     topic_arn     = data.aws_sns_topic.input_topic.arn
     events        = ["s3:ObjectCreated:*"]
-    filter_suffix = "input/"
+    filter_prefix = "input"
 
   }
 
