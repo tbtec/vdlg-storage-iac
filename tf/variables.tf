@@ -7,7 +7,7 @@ variable "region" {
 variable "bucket_name" {
   description = "The Bucket name for the S3 bucket used for video processing"
   type        = string
-  default     = "vdo-processor-ligeiro-tremzao"
+  default     = "vdlg-video-files"
 }
 
 variable "tags" {
